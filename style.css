@@ -109,6 +109,14 @@ li a {
     padding-bottom: 20px;
   }
 
+  .grey{
+    color: rgba(180, 180, 180, 0.904);
+  }
+
+  .highlight{
+    color: blue;
+  }
+
   /* progress bars */
   progress {
     border-radius: 7px; 
