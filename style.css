@@ -1,0 +1,154 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  outline: 0;
+  font-size: 100%;
+  vertical-align: baseline;
+  background: transparent;
+}
+/* nav bar css */
+nav {
+  background-color: #0093E9;
+  background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+  border-top:  5px solid #555;
+  border-bottom: 1px solid #555;
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+
+nav ul {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+  text-align: center;
+  flex: 1;
+  font-family:Arial, Helvetica, sans-serif
+}
+
+nav ul :hover {
+  color: rgb(30, 255, 0);
+}
+
+nav ul a:hover, a:visited, a:link, a:active {
+  text-decoration: none;
+}
+
+a.current{
+  color: rgb(38, 0, 255);
+  font-weight: 900;
+}
+
+nav li {
+  flex: auto;
+  display: inline-block;
+}
+li a {
+  color: #000000;
+}
+
+.container {
+  min-height: 100vh; 
+  display: flex;
+  flex-direction: column;
+}
+
+  /* portrait css */
+  .portrait {
+    flex: 1;
+    text-align: center;
+    border-right: 1px solid #dedddd;
+}
+
+  img {
+    width: 300px;
+    height: 300px;
+    border-radius: 30%;
+  }
+  .name, .desc  {
+    text-align: center;
+  }
+  .email {
+    color: blue;
+    text-align: center;
+  }
+  
+  h3 {
+    font-size: 200%;
+  }
+
+  /* content css*/
+  .content {
+    flex: 3;
+    padding-left: 100px;
+    padding-top: 40px;
+    overflow-wrap: break-word;
+}
+  .contentheader {
+    font-size:200%;
+    color: rgba(112, 112, 112, 0.571);
+  }
+  
+  .contentdesc {
+    width: 50%;
+  }
+
+  .tables {
+    width:100vh;
+    text-align:left;
+    padding:5px
+  }
+  
+  .body{
+    display: flex;
+    flex-direction: row;
+    margin-right: 10%;
+    flex: 1;
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  /* progress bars */
+  progress {
+    border-radius: 7px; 
+    width: 400px;
+    height: 15px;
+    box-shadow: 1px 1px 4px rgba( 0, 0, 0, 0.2 );
+  }
+  progress::-webkit-progress-bar {
+    background-color: rgb(255, 255, 255);
+    border-radius: 7px;
+  }
+  progress::-webkit-progress-value {
+    background-color: #0087f5;
+    border-radius: 7px;
+  }
+
+
+/* footer css */
+  footer {
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    border-top:  1px solid #555;
+    border-bottom: 1px solid #555;
+    background-color: #0093E9;
+    background-image: linear-gradient(160deg, #0093E9 0%, #80D0C7 100%);
+}
+
+@media only screen and (max-width: 800px) {
+  img.profile {
+      max-width: 200px;
+  }
+
+  .body {
+      flex-direction: column;
+  }
+
+  .portrait {
+      border-right: none;
+      border-bottom: 1px solid #dedddd;;
+      padding-bottom: 2em;
+  }
+}
